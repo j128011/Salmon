@@ -1,0 +1,350 @@
+﻿<html lang="ja">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/original.css" >
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+<title>Knowhow登録</title>
+
+
+<style type="text/css">
+p.pad1 { padding: 5% 0 0 0; }
+.table-css { border-collapse: collapse; }
+.td-css11  { 
+    border: 1px solid black;
+    border-top-style:none;
+    border-left-style:none;
+    border-right-style:none;
+
+.td-css13  { border-style:none; }
+
+div.date { text-align: right; }
+!--
+ a { text-decoration: none; }
+-->
+
+
+</style>
+<script type="text/javascript">
+<!--
+
+function disp(){
+
+	// 「OK」時の処理開始 ＋ 確認ダイアログの表示
+	if(window.confirm('この内容で登録します')){
+
+		location.href = "Knowhow登録完了.html"; 
+		return true;
+
+	}
+	// 「OK」時の処理終了
+
+	// 「キャンセル」時の処理開始
+	else{
+
+		window.alert('キャンセルされました'); // 警告ダイアログを表示
+		return false;
+
+	}
+	// 「キャンセル」時の処理終了
+
+}
+
+// -->
+
+</script>
+<script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+<header>
+<home>
+</header>
+<!-- コンテナ開始 -->
+<div id="container">
+
+
+
+<!-- ヘッダ開始 -->
+<div id="header">
+<table width="100%">
+<tr>
+<td>　
+</td>
+</tr>
+<tr align ="right">
+<td align ="right">
+<b>
+<u>たなか たかふみさん</u>　
+</b>
+<font color="red">
+▼ &nbsp;
+</td>
+</tr>
+</table>
+</div>
+<!-- ヘッダ終了 -->
+
+<!-- ナビゲーション開始 -->
+<div id="nav">
+<br>
+<a href="top.html">
+<table border="1" width="100%">
+<tr>
+<td>
+<br><br><br><br><br><br><br><br><br><br>
+</td>
+</tr>
+</table>
+</a>
+<br>
+<a href="コミュニケーション.html" class="myButton1">コミュニケーション</a>
+<br><br><br><br>
+<a href="成果物一覧.html" class="myButton1">　　成果物管理　　</a>
+<br><br><br><br>
+<a href="インスペクションTOP.html" class="myButton1">  &nbsp;インスペクション&nbsp;  </a>
+<br><br><br><br>
+<a href="障害管理.html" class="myButton1"> &nbsp;　　障害管理&nbsp;　　 </a>
+<br><br><br><br>
+<a href="個人情報閲覧.html" class="myButton1"> 　個人情報管理　 </a>
+<br><br><br><br>
+<a href="Knowhow一覧.html" class="myButton">  &nbsp;　 Knowhow　 &nbsp;  </a>
+<br><br><br><br>
+</div>
+
+<!-- ナビゲーション終了 -->
+
+<!-- メインカラム開始 -->
+<div id="content">　
+<center>
+<table width="90%">
+<tr>
+<td>
+  <ul class="nav nav-tabs">
+        <li><a href="Knowhow一覧.html" >
+	<font size="5">Knowhow閲覧</font>
+	</a></li>
+	<li  class="active"><a href="Knowhow登録.html" >
+	<font size="5">Knowhow登録</font>
+	</a></li>
+    </ul>
+    
+</td>
+</tr>
+</table>
+
+<table width="90%" border ="3" bordercolor="#ffffff">
+<tr>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<p class ="pad1">
+<font size="5">
+タイトル
+</font>
+</p>
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<input type="text" name="" style="width:90%;font-size:150%" placeholder="入力必須">
+</td>
+<td bgcolor="#DCDCDC" align="center"  width="15%">
+<font size="5">
+環境設定
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+
+<table width="100%" border="0">
+<tr>
+<td  width="20%">
+<font size="5">
+MySQL
+</td>
+<td>
+ver.
+<input type="text" name="">
+</td>
+</tr>
+<tr>
+<td>
+<font size="5">
+Tomcat
+</font>
+</td>
+<td>
+ver.
+<input type="text" name="">
+</td>
+<tr>
+<tr>
+<td>
+<font size="5">
+Java
+</font>
+</td>
+<td>
+ver.
+<input type="text" name="">
+</td>
+</tr>
+<tr>
+<td  width="20%">
+<font size="5">
+Eclipse
+</td>
+<td>
+ver.
+<input type="text" name="">
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+<tr>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<p class ="pad1">
+<font size="5">
+工程
+</font>
+</p>
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<select style="width:90%;font-size:150%" onchange="changeColor()">
+<option value="" style="color: #e8e8e8;">--入力必須--</option>
+<option value="1">要求定義</option>
+<option value="2">システム分析</option>
+<option value="3">内部設計</option>
+<option value="4">外部設計</option>
+<option value="5">コーディング・単体テスト</option>
+<option value="6">システムテスト</option>
+<br>
+
+
+</td>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<font size="4">
+
+担当ユースケース
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<input type="text" name="" style="width:90%;font-size:150%" placeholder="入力必須">
+
+
+</td>
+</tr>
+
+<tr>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<p class ="pad1">
+<font size="5">
+背景・問題
+</font>
+</p>
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<input type="text" name="" style="width:90%;font-size:150%" placeholder="入力必須">
+</td>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<font size="5">
+原因
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<input type="text" name="" style="width:90%;font-size:150%" placeholder="入力必須">
+
+
+</td>
+</tr>
+
+<tr>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<p class ="pad1">
+<font size="5">
+対処
+</font>
+</p>
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<input type="text" name="" style="width:90%;font-size:150%" placeholder="入力必須">
+</td>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<font size="5">
+考察
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<input type="text" name="" style="width:90%;font-size:150%" placeholder="入力必須">
+
+
+</td>
+</tr>
+
+<tr>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<p class ="pad1">
+<font size="5">
+参照
+</font>
+</p>
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<input type="text" name="" style="width:90%;font-size:150%" placeholder="入力必須">
+</td>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<font size="5">
+キーワード
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<input type="text" name="" style="width:90%;font-size:150%" placeholder="入力必須">
+
+</td>
+</tr>
+
+<tr>
+<td align="center" bgcolor="#DCDCDC" width="15%">
+<p class ="pad1">
+<font size="5">
+添付ファイル
+</font>
+</p>
+</td>
+<td  bgcolor="#e8e8e8"  width="35%">
+<input type="file" name="" style="width:90%;font-size:100%"  multiple  >
+</td>
+
+</tr>
+
+</table>
+<br>
+<table width="90%" border="0">
+<tr>
+<td width="29%"></td>
+<td align="center">
+<form name="" method="post" action="Knowhow登録完了.html" style="display: inline" onSubmit="return disp()">
+<input type="submit" class="kousei"  value="登録する" style="font-size:160%;">
+</form>
+</td>
+
+<td width="29%"></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+</center>
+
+</div>
+<!-- メインカラム終了 -->
+
+
+
+</div>
+<!-- コンテナ終了 -->
+
+</body>
+</html>

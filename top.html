@@ -1,0 +1,356 @@
+﻿<html lang="ja">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/original.css" >
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<title>top</title>
+
+
+<style type="text/css">
+<!--
+ a { text-decoration: none; }
+-->
+
+
+</style>
+<style type="text/css">
+    .fn-gantt *,
+    .fn-gantt *:after,
+    .fn-gantt *:before {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+</style>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/jquery.fn.gantt.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+        $(function() {
+            "use strict";
+            $(".gantt").gantt({
+                source: [{
+                    name: "上流工程",
+                    desc: "要求仕様書",
+                    values: [{
+                        from: "/Date(1430838107000)/",
+                        to: "/Date(1431615707000)/",
+                        label: "要求仕様書",
+                        customClass: "ganttRed"
+                    }]
+                },{
+                    name: " ",
+                    desc: "ユースケース",
+                    values: [{
+                        from: "/Date(1431615707000)/",
+                        to: "/Date(1432911707000)/",
+                        label: "ユースケース",
+                        customClass: "ganttGreen"
+                    }]
+                },{
+                    name: "",
+                    desc: "クラス図",
+                    values: [{
+                        from: "/Date(1432911707000)/",
+                        to: "/Date(1434294107000)/",
+                        label: "クラス図",
+                        customClass: "ganttOrange"
+                    }]
+                },{
+                    name: "",
+                    desc: "シーケンス図",
+                    values: [{
+                        from: "/Date(1434294107000)/",
+                        to: "/Date(1435590107000)/",
+                        label: "シーケンス図",
+                        customClass: "others"
+                    }]
+                },{
+                    name: "",
+                    desc: "ステートチャート図",
+                    values: [{
+                        from: "/Date(1435590107000)/",
+                        to: "/Date(1436454107000)/",
+                        label: "ステー地チャート図",
+                        customClass: "ganttGreen"
+                    }]
+                },{
+                    name: "",
+                    desc: "DB設計",
+                    values: [{
+                        from: "/Date(1436454107000)/",
+                        to: "/Date(1438182107000)/",
+                        label: "DB設計",
+                        customClass: "ganttRed"
+                    }]
+                },{
+                    name: "",
+                    desc: "UI設計",
+                    values: [{
+                        from: "/Date(1438182107000)/",
+                        to: "/Date(1439564507000)/",
+                        label: "UI設計",
+                        customClass: "ganttGreen"
+                    }]
+                },{
+                    name: "実装",
+                    desc: "コーディング",
+                    values: [{
+                        from: "/Date(1439564507000)/",
+                        to: "/Date(1443538890000)/",
+                        label: "コーディング",
+                        customClass: "ganttOrange"
+                    }]
+                },{
+                    name: "テスト",
+                    desc: "システムテスト",
+                    values: [{
+                        from: "/Date(1443538890000)/",
+                        to: "/Date(1444834890000)/",
+                        label: "システムテスト",
+                        customClass: "other"
+                    }]
+                }],
+                navigate: "scroll",
+                maxScale: "hours",
+                itemsPerPage: 10,
+                months : ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+                dow : ["日", "月", "火", "水", "木", "金", "土"],
+                
+                onRender: function() {
+                    if (window.console && typeof console.log === "function") {
+                        console.log("chart rendered");
+                    }
+                }
+            });
+            prettyPrint();
+        });
+</script>
+
+</head>
+
+<body>
+<header>
+<home>
+</header>
+<!-- コンテナ開始 -->
+<div id="container">
+
+
+
+<!-- ヘッダ開始 -->
+<div id="header">
+<br>
+<table width="100%" border="0">
+<td >
+<table width="100%" border="0">
+<tr>
+<td align="right">
+<b>
+<u>たなか たかふみさん</u>　
+</b>
+<font color="red">
+▼
+</font>
+<br>
+　
+</td>
+</tr>
+
+<tr align="center">
+<td>
+
+<table border="1" bordercolor="#000000" width="90%">
+<tr>
+<td width="25%"align="center"bgcolor="#808080"><font size="5">
+プロジェクト
+</td>
+<td width="25%" align="center" bgcolor="#f5f5f5"><font size="5">
+さふぁ
+</td>
+<td width="25%" align="center" bgcolor="#808080"><font size="5">
+課題
+</td>
+<td width="25%" align="center"bgcolor="#f5f5f5"><font size="5">
+しんぎたい
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#808080"><font size="4">
+メンバー
+</td>
+<td align="center" bgcolor="#f5f5f5">
+<table width="70%" border="0">
+<tr>
+<td align="center"><font size="4">
+たねけん
+</td>
+<td width="10%" bgcolor="yellow">
+</td>
+</tr>
+<tr>
+<td align="center"><font size="4">
+さいとー
+</td>
+<td width="10%" bgcolor="white">
+</td>
+</tr>
+　
+<tr>
+<td align="center"><font size="4">
+しゅー
+</td>
+<td width="10%" bgcolor="blue">
+</td>
+</tr>
+</table>
+<br>
+
+</td>
+<td align="center" bgcolor="#808080">
+教授・TA
+</td>
+<td align="center" bgcolor="#f5f5f5">
+<table width="70%">
+<tr>
+<td align="center"><font size="4">
+櫨山先生
+</td>
+<td width="10%" bgcolor="white">
+</td>
+</tr>
+<tr>
+<td align="center"><font size="4">
+こんの
+</td>
+<td width="10%" bgcolor="orange">
+</td>
+</tr>
+　
+<tr>
+<td align="center"><font size="4">
+あやちゃん
+</td>
+<td width="10%" bgcolor="white">
+</td>
+</tr>
+</table>
+<br>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!-- ヘッダ終了 -->
+
+<!-- ナビゲーション開始 -->
+<div id="nav">
+<br>
+<a href="top.html">
+<table border="1" width="90%">
+<tr><td>
+<br><br><br><br><br><br><br><br><br>
+
+</td>
+</tr>
+</table></a>
+<br>
+
+<a href="コミュニケーション.html" class="myButton1">コミュニケーション</a>
+<br><br><br><br>
+<a href="成果物一覧.html" class="myButton1">　　成果物管理　　</a>
+<br><br><br><br>
+<a href="インスペクションTOP.html" class="myButton1">  &nbsp;インスペクション&nbsp;  </a>
+<br><br><br><br>
+<a href="障害管理.html" class="myButton1"> &nbsp;　　障害管理&nbsp;　　 </a>
+<br><br><br><br>
+<a href="個人情報閲覧.html" class="myButton1"> 　個人情報管理　 </a>
+<br><br><br><br>
+<a href="Knowhow一覧.html" class="myButton1">  &nbsp;　 Knowhow　 &nbsp;  </a>
+<br><br><br><br>
+</div>
+
+<!-- ナビゲーション終了 -->
+
+<!-- メインカラム開始 -->
+<div id="content">　
+<center>
+
+<table width="95%" border="0">
+<tr>
+<td align="center">
+<font size="6">スケジュール
+</td>
+<td align="center">
+<font size="5">
+要求仕様書完成まで○日！！
+</font>
+</td>
+<td align="center" width="25%">
+<form name="" method="post" action="スケジュール登録.html" style="display: inline">
+<input type="submit"  value="スケジュール登録" class="INSPECTION" style="font-size:90%;">
+</form>
+</td>
+</tr>
+</table>
+
+<div class="gantt"></div>
+
+
+
+
+</center>
+<table width="90%"border="0">
+<tr>
+<td>
+　　　新着・お知らせ
+</td>
+</tr>
+<tr><td>
+<p>
+<font size="4">
+　　　●
+<u><a href="#">要求仕様書第1版がアップされました</a></u>
+
+</p>
+</td>
+</tr>
+<tr><td>
+<p>
+<font size="4">
+　　　●
+<u><a href="#">インスペクションへの返答があります</a></u>
+</p>
+</td>
+</tr>
+<tr><td>
+<p>
+<font size="4">
+　　　●
+<u><a href="#">CVSの設定資料をアップしました</a></u>
+</p>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+</div>
+<!-- メインカラム終了 -->
+
+
+
+</div>
+<!-- コンテナ終了 -->
+
+</body>
+</html>
