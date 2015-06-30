@@ -1,5 +1,11 @@
 ﻿<html lang="ja">
 <head>
+   <script language="javascript" type="text/javascript">
+        function OnButtonClick() {
+            target = document.getElementById("output");
+            target.innerHTML = ">>1";
+        }
+    </script>
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -118,7 +124,7 @@ div.date { text-align: right; }
 </td>
 <td align="center">
 1
-<a href="#">
+<a href="javascript:void(0)" onclick="OnButtonClick();">
 <table border="1">
 <tr>
 <td>
@@ -206,7 +212,7 @@ div.date { text-align: right; }
 </td>
 <td align="center">
 2
-<a href="#">
+<a href="javascript:void(0)" onclick="OnButtonClick();">
 <table border="1">
 <tr>
 <td>
@@ -276,7 +282,7 @@ div.date { text-align: right; }
 </td>
 <td align="center">
 3
-<a href="#">
+<a href="javascript:void(0)" onclick="OnButtonClick();">
 <table border="1">
 <tr>
 <td>
@@ -397,7 +403,7 @@ div.date { text-align: right; }
 </td>
 <td align="center">
 4
-<a href="#">
+<a href="javascript:void(0)" onclick="OnButtonClick();">
 <table border="1">
 <tr>
 <td>
@@ -473,7 +479,7 @@ div.date { text-align: right; }
 </td>
 <td align="center">
 4
-<a href="#">
+<a href="javascript:void(0)" onclick="OnButtonClick();">
 <table border="1">
 <tr>
 <td>
@@ -555,7 +561,7 @@ div.date { text-align: right; }
 <br>
 <form method="post" action="">
 
-          <textarea name="comment" id="introduction" cols="10" rows="4"
+          <textarea name="comment" id="output" cols="10" rows="4"
             placeholder="コメントを入力してください" class="form-control"></textarea>
 
 </td>
